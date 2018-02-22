@@ -29,4 +29,5 @@
  * @property {boolean} ephemeral Whether the key should be persisted. "true" to persist.
  */
 
+// 로드되는 index.js 내에서 ./lib/Client.js를 require하여 Client.js의 모든 기능을 사용할 수 있다.
 module.exports = require('./lib/Client.js');
