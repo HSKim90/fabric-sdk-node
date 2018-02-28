@@ -100,7 +100,7 @@ module.exports.newKeyValueStore = function(options) {
 	var self = this;
 	return new Promise(function(resolve, reject) {
 		var kvsEnv = self.getConfigSetting('key-value-store');
-		var store = require(kvsEnv);
+		var store = require(kvsEnv); // require fabric-client/lib/impl/FileKeyValueStore.js
 		return resolve(new store(options));
 	});
 };
